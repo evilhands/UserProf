@@ -1,0 +1,10 @@
+<mat-toolbar>
+  <span>UserProf</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button  aria-label="account" routerLink="/profile">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="logout" (click)="fbAuth.signOut();">
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>

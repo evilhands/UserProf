@@ -1,0 +1,33 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>Profil</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src={{photoURL.value}} alt="Profile avatar">
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label for="displayName">Name: </mat-label>
+            <input matInput id="displayName" type="text" [formControl]="displayName">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="email">E-Mail: </mat-label>
+            <input matInput id="email" type="text" [formControl]="email">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="photoURL">Foto URL: </mat-label>
+            <input matInput id="photoURL" type="text" [formControl]="photoURL">
+        </mat-form-field>
+        <!-- <mat-form-field>
+            <mat-label for="phoneNumber">Tel.: </mat-label>
+            <input matInput id="phoneNumber" type="text" [formControl]="phoneNumber">
+        </mat-form-field> -->
+        <mat-form-field>
+            <mat-label for="password">Passwort: </mat-label>
+            <input matInput id="password" type="password" [formControl]="password">
+        </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button (click)="save()">Speichern</button>
+        <button mat-button (click)="savePassword()">Passwort Speichern</button>
+        <button mat-button>Abbrechnen</button>
+    </mat-card-actions>
+</mat-card>
